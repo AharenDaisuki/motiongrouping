@@ -100,7 +100,7 @@ def setup_dataset(args):
         img_dir = '/path/to/MoCA_filtered/JPEGImages'
         gt_dir ='/path/to/MoCA_filtered/Annotations'
 
-        val_flow_dir = '/path/to/MoCA_filtered/Flows_gap1/'
+        val_flow_dir = '/path/to/MoCA_filtered/Flows_gap1/' #TODO: use
         val_seq = ['arabian_horn_viper', 'arctic_fox_1', 'arctic_wolf_1', 'black_cat_1', 'crab', 'crab_1', 
                     'cuttlefish_0', 'cuttlefish_1', 'cuttlefish_4', 'cuttlefish_5', 
                     'devil_scorpionfish', 'devil_scorpionfish_1', 'flatfish_2', 'flatfish_4', 'flounder', 

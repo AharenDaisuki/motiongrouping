@@ -14,13 +14,13 @@ This code cleans MoCA
 and saves the annotations as .png files (same as DAVIS format)
 """
 
-base_dir = "/path/to/MoCA"
+base_dir = "../path/to/MoCA_filtered"
 
 category_dir = os.path.join(base_dir, "JPEGImages")
 categories = sorted(os.listdir(category_dir))
 
 #load annotations
-anno = pd.read_csv(os.path.join(base_dir, "Annotations", "annotations.csv"), header=9)
+anno = pd.read_csv(os.path.join(base_dir, "Annotations", "annotations.csv"), header=0)
 file = anno['file_list'].tolist()
 anno_cats = [f.split('/')[1] for f in file]
 anno_nums = [int(f.split('/')[2].strip('.jpg')) for f in file]

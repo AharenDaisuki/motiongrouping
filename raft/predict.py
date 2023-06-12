@@ -92,8 +92,8 @@ def predict(args):
             writeFlowFile(rawflopath[:-4]+'.flo', flo)
 
             # save image.
-            flo = flow_viz.flow_to_image(flo)
-            cv2.imwrite(flopath[:-4]+'.png', flo[:, :, [2, 1, 0]])
+            # flo = flow_viz.flow_to_image(flo)
+            # cv2.imwrite(flopath[:-4]+'.png', flo[:, :, [2, 1, 0]])
 
 
 if __name__ == '__main__':
